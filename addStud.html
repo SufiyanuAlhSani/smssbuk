@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Student - SRMS</title>
+  <style>
+    /* ===== GLOBAL ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      display: flex;
+      height: 100vh;
+      background: #f9f9f9;
+      color: #333;
+    }
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(180deg, #004080, #0066cc);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .sidebar .brand {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .sidebar .logo {
+      width: 50px;
+      height: 50px;
+      background: white;
+      color: #004080;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .sidebar h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .sidebar .small {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .nav a:hover,
+    .nav a.active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    /* ===== MAIN ===== */
+    main {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #004080;
+    }
+    /* ===== FORMS ===== */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form input,
+    form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button.primary {
+      padding: 10px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button.primary:hover {
+      background: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">BUK</div>
+      <div>
+        <h1>Staff Model Sec. School</h1>
+        <p class="small">Bayero University Kano</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="view.html">View Records</a>
+      <a href="edit.html">Edit Student</a>
+      <a href="delete.html">Delete Student</a>
+      <a href="about.html">About</a>
+      <a href="webpage.html">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Add New Student</h2>
+    <form action= "addStud.php" method = "POST">
+	
+      <input name = "name" type="text" placeholder="Full Name" required>
+      <select name = "class" required>
+        <option value="">Select Class</option>
+        <option value="JSS1">JSS1</option>
+        <option value="JSS2">JSS2</option>
+        <option value="SS1">SS1</option>
+        <option value="SS2">SS2</option>
+      </select>
+      <input name ="age" type="number" placeholder="Age" required>
+      <select name= "gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <button type="submit" class="primary">Save Student</button>
+    </form>
+  </main>
+</body>
+</html>

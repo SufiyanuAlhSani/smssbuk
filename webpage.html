@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Staff Model Secondary School - BUK</title>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  :root{
+    --bg:#f6f9ff; --surface:#ffffff; --card:#ffffff; --text:#0f1724;
+    --accent:#335dff; --accent-2:#0ea57e;
+    --radius:10px; --shadow:0 6px 18px rgba(15,23,40,.08);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html, body{
+    height:100%;
+  }
+
+  body{
+    font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: var(--bg);
+    color:var(--text);
+    display:grid;
+    grid-template-rows:auto 1fr auto; /* header - main - footer */
+    min-height:100vh;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    background:linear-gradient(135deg, var(--accent), var(--accent-2));
+    color:white;
+    padding:20px;
+    box-shadow: var(--shadow);
+    text-align:center;
+  }
+
+  header h1{
+    font-size:50px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom:5px;
+  }
+
+  header h2{
+    font-size:18px;
+    font-weight:500;
+    font-style:italic;
+    letter-spacing:1px;
+    color:#f0f8ff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  }
+
+  /* ---------- Main ---------- */
+  main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px;
+  }
+
+  .profile{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border-radius:var(--radius);
+    background:var(--card);
+    border:1px solid #e2e8f0;
+    box-shadow:var(--shadow);
+    width:100%;
+    max-width:1100px;
+    gap:20px;
+  }
+
+  .address{
+    font-size:14px;
+    line-height:1.4;
+    flex:1;
+  }
+
+  .menu{
+    flex:1;
+    text-align:center;
+  }
+  .menu nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+  }
+  .menu a{
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:600;
+    transition:color .3s;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:14px;
+  }
+  .menu a:hover{color:var(--accent-2);}
+
+  .profile img{
+    width:70px;
+    height:auto;
+  }
+
+  .table-wrap{
+    margin-top:15px;
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .table-wrap img{
+    max-width:100%;
+    max-height:45vh; /* control background height */
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:linear-gradient(135deg, var(--accent), var(--accent-2));
+    color:white;
+    text-align:center;
+    padding:12px;
+    box-shadow: var(--shadow);
+    font-size:13px;
+  }
+  img {
+  width:1100px;   /* sets width */
+  height:700px;  /* sets height */
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>STAFF MODEL SECONDARY SCHOOL</h1>
+  <h2>Bayero University, Kano</h2>
+</header>
+
+<!-- MAIN -->
+<main>
+  <section class="profile">
+    <div class="address">
+      <strong>Bayero University</strong><br>
+      Kano, Nigeria<br>
+      P.M.B. 3011
+    </div>
+
+    <!-- MENU with icons -->
+    <div class="menu">
+      <nav>
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="ContactUs.html"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+
+    <!-- Logo -->
+    <img src="logo.png" alt="School Logo" width = "900">
+  </section>
+
+  <div class="table-wrap">
+    <img src="bg1.png" alt="School Background">
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2025 Staff Model Secondary School, Bayero University Kano. All Rights Reserved.
+</footer>
+
+</body>
+</html>

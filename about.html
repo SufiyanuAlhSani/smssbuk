@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - SRMS</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+    body{display:flex;height:100vh;background:#f9f9f9;color:#333}
+    .sidebar{width:250px;background:linear-gradient(180deg,#004080,#0066cc);color:white;display:flex;flex-direction:column;padding:20px}
+    .brand{display:flex;align-items:center;margin-bottom:30px}
+    .logo{width:50px;height:50px;background:white;color:#004080;border-radius:50%;display:flex;justify-content:center;align-items:center;font-weight:bold;margin-right:10px}
+    .brand h1{font-size:18px;font-weight:bold}
+    .brand .small{font-size:12px;opacity:.8}
+    .nav{display:flex;flex-direction:column;gap:12px}
+    .nav a{text-decoration:none;color:white;padding:10px 15px;border-radius:6px;transition:.3s}
+    .nav a:hover,.nav a.active{background:rgba(255,255,255,0.2)}
+    main{flex:1;padding:40px}
+    h2{font-size:24px;color:#004080;margin-bottom:20px}
+    p{font-size:16px;line-height:1.6;max-width:600px}
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">BUK</div>
+      <div>
+        <h1>Staff Model Sec. School</h1>
+        <p class="small">Bayero University Kano</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="addStud.html">Add Student</a>
+      <a href="view.html">View Records</a>
+      <a href="edit.html">Edit Student</a>
+      <a href="delete.html">Delete Student</a>
+      <a href="webpage.html">Logout</a>
+    </nav>
+  </div>
+  <main>
+    <h2>About SRMS</h2>
+    <p>
+      The Student Record Management System (SRMS) of Staff Model Secondary School, Bayero University Kano, is designed to provide
+      a modern, reliable, and efficient platform for managing students’ academic information.
+      With SRMS, administrators can easily add, edit, delete, and view student data with improved accuracy and efficiency.
+    </p>
+  </main>
+</body>
+</html>

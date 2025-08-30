@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Records - SRMS</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+    body{display:flex;height:100vh;background:#f9f9f9;color:#333}
+    .sidebar{width:250px;background:linear-gradient(180deg,#004080,#0066cc);color:white;display:flex;flex-direction:column;padding:20px}
+    .brand{display:flex;align-items:center;margin-bottom:30px}
+    .logo{width:50px;height:50px;background:white;color:#004080;border-radius:50%;display:flex;justify-content:center;align-items:center;font-weight:bold;margin-right:10px}
+    .brand h1{font-size:18px;font-weight:bold}
+    .brand .small{font-size:12px;opacity:.8}
+    .nav{display:flex;flex-direction:column;gap:12px}
+    .nav a{text-decoration:none;color:white;padding:10px 15px;border-radius:6px;transition:.3s}
+    .nav a:hover,.nav a.active{background:rgba(255,255,255,0.2)}
+    main{flex:1;padding:40px}
+    h2{font-size:24px;color:#004080;margin-bottom:20px}
+    table{width:100%;border-collapse:collapse;background:white;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    th,td{padding:12px;border:1px solid #ddd;text-align:left}
+    th{background:#004080;color:white}
+    tr:nth-child(even){background:#f2f2f2}
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">BUK</div>
+      <div>
+        <h1>Staff Model Sec. School</h1>
+        <p class="small">Bayero University Kano</p>
+      </div>
+    </div>
+    <nav class="nav">
+ 
+      <a href="dashboard.html">Dashboard</a>
+      <a href="addStud.html">Add Student</a>
+      <a href="edit.html">Edit Student</a>
+      <a href="delete.html">Delete Student</a>
+      <a href="about.html">About</a>
+      <a href="webpage.html">Logout</a>
+    </nav>
+  </div>
+  <main>
+    <h2>Student Records</h2>
+    <table>
+      <tr><th>ID</th><th>Name</th><th>Class</th><th>Age</th><th>Gender</th></tr>
+      <tr><td>101</td><td>Aisha Bello</td><td>SS1</td><td>15</td><td>Female</td></tr>
+      <tr><td>102</td><td>Mohammed Yusuf</td><td>JSS2</td><td>13</td><td>Male</td></tr>
+    </table>
+  </main>
+</body>
+</html>
